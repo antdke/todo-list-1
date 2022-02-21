@@ -20,8 +20,8 @@ function addTodo(e) {
   task.innerText = taskText
   let doneButton = document.createElement("button")
   doneButton.innerText = "Done!"
-  todo.append(task, doneButton)
-  t.append(todo)
+  todo.prepend(task, doneButton)
+  t.prepend(todo)
 }
 
 function createTaskText(e) {
